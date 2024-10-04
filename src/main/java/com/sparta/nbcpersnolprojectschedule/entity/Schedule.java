@@ -44,8 +44,8 @@ public class Schedule {
 
     }
 
-    public void deleteFromDto(Long scgeduleId) {
+    public void deleteFromDto(Long scheduleId) {
 
-        this.scheduleId = scgeduleId;
+        this.scheduleId = scheduleId;
     }
 }
