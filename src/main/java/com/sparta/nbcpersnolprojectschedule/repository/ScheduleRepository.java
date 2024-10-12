@@ -72,7 +72,7 @@ public class ScheduleRepository {
         });
     }
 
-    public void update(Schedule updatedSchedule) {
+    public void update(Schedule updatedScheduleS) {
         String sql = "UPDATE schedule SET content = ?, author = ?, update_date = now() WHERE schedule_id = ?";
         jdbcTemplate.update(sql, updatedSchedule.getContent(), updatedSchedule.getAuthor(), updatedSchedule.getScheduleId());
     }
